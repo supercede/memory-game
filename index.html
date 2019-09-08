@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false">
+    <div id="app">
+        <h1 id='title'>Memory Game</h1>
+         <div id="head">
+             <div id='game-body'>
+                 <header>
+                    <p><span class='title'>Moves:</span> <span  id='move'>0</span></p>
+                    <p id = 'time'> <span class='title'>Time: </span>
+                        <span id='hour'>0</span>:<span id='min'>00</span>:<span id='sec'>00</span>
+                    </p>
+                    <h4 id = 'rating'> 
+                        <i class="fas fa-star" id='star1'></i>
+                        <i class="fas fa-star" id='star2'></i>
+                        <i class="fas fa-star" id='star3'></i>
+                    </h4>
+                    <h4><i class="fas fa-sync-alt" id='restart' title='Restart'></i></h4>
+                </header>
+
+                 <ul id="cards"> 
+                     <li class="card close" name="mobile"><i class="fas fa-mobile-alt"></i></li>
+                     <li class="card close" name="dove"><i class="fas fa-dove"></i></li>
+                     <li class="card close" name="ball"><i class="far fa-futbol"></i></li>
+                     <li class="card close" name="camera"><i class="fas fa-camera-retro"></i></li>
+                     <li class="card close" name="lemon"><i class="far fa-lemon"></i></li>
+                     <li class="card close" name="knight"><i class="fas fa-chess-knight"></i></li>
+                     <li class="card close" name="face"><i class="far fa-grin-squint"></i></li>
+                     <li class="card close" name="cake"><i class="fas fa-birthday-cake"></i></li>
+                     <li class="card close" name="dove"><i class="fas fa-dove"></i></li>
+                     <li class="card close" name="mobile"><i class="fas fa-mobile-alt"></i></li>
+                     <li class="card close" name="ball"><i class="far fa-futbol"></i></li>
+                     <li class="card close" name="lemon"><i class="far fa-lemon"></i></li>
+                     <li class="card close" name="knight"><i class="fas fa-chess-knight"></i></li>
+                     <li class="card close" name="face"><i class="far fa-grin-squint"></i></li>
+                     <li class="card close" name="camera"><i class="fas fa-camera-retro"></i></li>
+                     <li class="card close" name="cake"><i class="fas fa-birthday-cake"></i></li>
+                 </ul>
+             </div>
+         </div>   
+
+        <section id='congrats-modal' class='hide'>
+            <span id='close'> &timesb;</span>
+            <h2>Congratulations!</h2>
+            <h3><span id="star-number">3</span> star <i class="fas fa-star" id='star3'></i> general</h3>
+            <h3>Here's a cookie</h3>
+            <img src="https://images.unsplash.com/photo-1560910615-9eaa2e704e63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=925&q=80" alt="" id="cookie">
+            <p>Took you <span id="move-number">0</span> moves but you got here.</p>
+            <button id='replay'>Restart</button>
+
+        </section>
+
+    </div>
+
+
+    
+    <script src='app.js'></script>
+</body>
+</html>
